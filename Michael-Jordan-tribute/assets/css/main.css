@@ -112,14 +112,14 @@ h2 {
 }
 
 .list-image {
-    content: url('https://raw.githubusercontent.com/ThreeDP/Site-Tribute-MJ/main/assets/img/ball-nocolor.png');
+    content: url('../img/ball-nocolor.png');
     display: block;
     width: 8vmin;
     height: 8vmin;
 }
 
 .list-item:hover .list-image {
-    content: url('https://raw.githubusercontent.com/ThreeDP/Site-Tribute-MJ/main/assets/img/ball.png')
+    content: url('../img/ball.png')
 }
 
 #img-caption {
