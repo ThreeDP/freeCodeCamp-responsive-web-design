@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asstes/css/main.css">
+    <title>Solicitação de Animes</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <ul>
+            <li class="nav-item"> <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item"> <a href="animes.html">animes</a>
+            </li>
+            <li class="nav-item"> <a href="galeria.html">galeria</a>
+            </li>
+            <li class="nav-item"> <a href="form.html">form</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="section-base content-table">
+        <div class="section-item content-text">
+            <h1 class="content-supertitle">Solicite um Anime</h1>
+            <form action="#" class="forms">
+                <div class="control-input input-t3">
+                    <label for="e-mail" class="form-label">E-mail</label>
+                    <input name="email" type="email" class="form-input" id="email" required>
+                </div>
+                <div class="control-input input-t2">
+                    <label for="anime" class="form-label">Nome do Anime</label>
+                    <input name="city" type="text" class="form-input" id="anime" required>
+                </div>
+                <div class="control-input input-t2">
+                    <label for="genero" class="form-label">Escolha o Genero</label>
+                    <select name="genero" id="genero" class="form-select" required>
+                        <option selected>Selecione o genero</option>
+                        <option value="shonen">shonen</option>
+                        <option value="shoujo">shoujo</option>
+                        <option value="seinen">seinen</option>
+                        <option value="josei">josei</option>
+                        <option value="ecchi">ecchi</option>
+                        <option value="harem">harem</option>
+                        <option value="isekai">isekai</option>
+                        <option value="mecha">mecha</option>
+                        <option value="kodomomuke">kodomomuke</option>
+                        <option value="lyashikei">lyashikei</option>
+                    </select>
+                </div>
+                <div class="control-input input-t2">
+                    <label for="receive-email" class="form-label">Aceita receber email com noticias</label>
+                    <div id="receive-email" class="radio-group">
+                        <div>
+                            <input type="radio" id="sim" name="receive-email" value="true">
+                            <label for="sim">sim</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="não" name="receive-email" value="false">
+                            <label for="não">não</label><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-control input-t4">
+                    <button name="button-sub" type="submit" class="button">Solicitar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

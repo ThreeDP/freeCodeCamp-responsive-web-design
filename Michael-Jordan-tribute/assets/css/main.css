@@ -1,0 +1,184 @@
+:root {
+    --mj-red : #BF0426;
+    --mj-red-light : #FF1F48;
+    --mj-blue : #0D1273;
+    --mj-gray: #F2F2F2;
+    --mj-dark: #0D0D0D;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+
+#main {
+    background-color: var(--mj-gray);
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+}
+
+.text-intro {
+    margin-bottom: 1rem;;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: var(--mj-dark);
+    margin: 50px 0px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: var(--mj-red);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0px;
+    margin-top: 0.5rem;
+}
+
+.title-legend {
+    color: gray;
+    text-align: center;
+    text-transform: lowercase;
+    font-weight: 400;
+}
+
+#ball-animation {
+    width: 6vmin;
+    height: auto;
+    position: relative;
+    left: 30%;
+    animation-name: ball;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.311, 0.441, 0.444, 1.649);
+}
+
+.image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+#img-div {
+    display: block;
+    margin: 0;
+    background-color: white;
+    padding: 1.2rem;
+}
+
+.list {
+    max-width: 1024px;
+    margin: 0px auto 50px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 0px;
+}
+
+.list-item {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "after before";
+    
+}
+
+.list-item-content {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 8px;
+}
+
+.list .list-item:nth-child(odd):hover .list-item-content {
+    box-shadow: 10px 10px 5px #e2e2e2;
+}
+
+.list .list-item:nth-child(even):hover .list-item-content {
+    box-shadow: -10px 10px 5px #e2e2e2;
+}
+
+.list .list-item:nth-child(even) .list-item-content{
+    grid-area: after;
+    flex-direction: row-reverse;
+    text-align: end;
+}
+
+.list .list-item:nth-child(odd) .list-item-content{
+    grid-area: before;
+}
+
+.list-image {
+    content: url('https://raw.githubusercontent.com/ThreeDP/Site-Tribute-MJ/main/assets/img/ball-nocolor.png');
+    display: block;
+    width: 8vmin;
+    height: 8vmin;
+}
+
+.list-item:hover .list-image {
+    content: url('https://raw.githubusercontent.com/ThreeDP/Site-Tribute-MJ/main/assets/img/ball.png')
+}
+
+#img-caption {
+    padding-top: 10px;
+    font-size: 1rem;
+    color: gray;
+    text-align: center;
+}
+
+.link-refs {
+    text-align: center;
+    color: var(--mj-dark)
+}
+
+.link-refs a {
+    text-decoration: none;
+    color:var(--mj-red);
+}
+
+.link-refs a:hover {
+    color:var(--mj-red-light)
+}
+
+.blackquote {
+    font-style: italic;
+    max-width: 720px;
+    margin: 0px auto 50px auto;
+}
+
+.blackquote p::after {
+    content: '"';
+    font-size: 1.2rem;
+    color: var(--mj-red-light);
+}
+.blackquote p::before {
+    content: '"';
+    font-size: 1.2rem;
+    color: var(--mj-red-light);
+}
+
+.text-description h3{
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0px;
+}
+
+.text-description small{
+    font-size: 0.8rem;
+    color: var(--mj-dark)
+}
+
+.text-description p {
+    font-size: 0.9rem;
+}
+
+
+@keyframes ball {
+    50% {
+        transform: rotate(1400deg);
+        left: 66%;
+    }
+}

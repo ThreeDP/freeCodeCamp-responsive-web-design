@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-bar {
+    width: 100%;
+}
+
+.items {
+    display: flex;
+    padding: 15px 10%;
+    margin: 0px;
+    background-color: #f2f2f2;
+}
+
+.item {
+    color: #f2f2f2;
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.link {
+    font-weight: 600;
+    color: #0D0D0D;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #E32536;
+}
+
+.articles {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.tables {
+    width: 70%;
+    margin-bottom: 3rem;;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-text {
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-table {
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-title {
+    color: #E32536;
+    margin-bottom: 5px;
+}
+
+.content-supertitle {
+    font-size: xx-large;
+    color: #E32536;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.content-subtitle {
+    color: #404040;
+    margin: 5px 0px;
+}
+
+.content-paragraph {
+    color: #8C8C8C;
+}
+
+.content-img {
+    width: 100%;
+}
+
+.button {
+    font-size: 1rem;
+    background-color: #0D0D0D;
+    color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;;
+    width: 180px;
+    text-align: center;
+    border: none;
+}
+
+.button:hover {
+    background-color: #E32536;
+}
+
+.title-ol {
+    text-align: start;
+    color: #E32536;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.ol-li-list {
+    color: #404040;
+    font-weight: 200;
+
+}
+
+.table-style {
+    max-width: 90%;
+    border: 3px solid #0D0D0D;
+}
+.table-style td {
+    border: 2px solid #404040;
+
+}
+
+.table-style td:first-child {
+    min-width: 25%;
+    background:#404040;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.table-style tr:first-child {
+    background:#8C8C8C;
+    text-align: center;
+}
+
+.ol-list-table {
+    margin: 0px;
+}
+
+.control-input {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.button-control {
+    text-align: center;
+}
+
+.forms {
+    display: flex;
+    flex-wrap: wrap;
+    background: #f2f2f2;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.input-t1 {
+    flex: 1 0 25%;
+}
+
+.input-t2 {
+    flex: 1 0 50%;
+}
+
+.input-t3 {
+    flex: 1 0 75%;
+}
+
+.input-t4 {
+    flex: 1 0 100%;
+}
+
+.form-label {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    letter-spacing: 2px;
+    color: #0D0D0D;
+    font-weight: normal;
+}
+
+.form-input {
+    padding: 0.5rem;
+    border: 1px solid #b8b8b8;
+    border-radius: 3px;
+    font-size: 1rem;
+    color: #dfdfdf;
+    letter-spacing: 2px;
+}
+
+.form-select {
+    padding: 0.5rem;
+    border: 1px solid #b8b8b8;
+    border-radius: 3px;
+    font-size: 1rem;
+    color: #0D0D0D;
+    letter-spacing: 2px;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 0.5rem;
+}
